@@ -1,5 +1,6 @@
 {
   "sidebar": {
+    "history": "History",
     "platform": "Platform",
     "dashboard": "Dashboard",
     "financials": "Financials",
@@ -143,18 +144,180 @@
       "title": "Ready to get started?",
       "subtitle": "Join us in building the future of trust in global payments.",
       "button": "Explore Our Solutions"
+    },
+    "roles": {
+      "title": "Roles in Trustless Work",
+      "subtitle": "Each role has a distinct function within the escrow process, defining who can perform specific actions and how parties interact with the smart contract.",
+      "badge": "Smart Contract Roles",
+      "examples": {
+        "title": "Examples"
+      },
+      "approver": {
+        "title": "Approver",
+        "description": "Approves or disputes milestones marked as completed by the service provider.",
+        "examples": [
+          "Buyer in a freelance marketplace approves deliverables",
+          "Host in a security deposit scenario approves checkout",
+          "Platform in a crowdfunding campaign approves milestones"
+        ]
+      },
+      "serviceProvider": {
+        "title": "Service Provider",
+        "description": "Delivers the product, service, or objective set on milestones and marks them as completed.",
+        "examples": [
+          "Freelancer delivering a service and marking it complete",
+          "Company updating crowdfunding milestones",
+          "Real Estate inspector marking house inspections as complete"
+        ]
+      },
+      "releaseSigner": {
+        "title": "Release Signer",
+        "description": "Approves the release of funds for the amount set when all milestones are approved.",
+        "examples": [
+          "Airbnb (platform) releasing a deposit",
+          "eBay (platform) releasing payment to a seller",
+          "DAO releasing a payment to a contributor"
+        ]
+      },
+      "disputeResolver": {
+        "title": "Dispute Resolver",
+        "description": "Resolves disputes by adjusting milestone amounts, updating status, or canceling the contract.",
+        "examples": [
+          "Platform acting as arbiter for deposit disputes",
+          "Independent third-party arbitrator setting new milestone prices",
+          "Canceling an escrow and redirecting funds back to client"
+        ]
+      },
+      "platformAddress": {
+        "title": "Platform Address",
+        "description": "Receives the platform fee and can update milestones while they are still pending.",
+        "examples": [
+          "Airbnb collecting platform fees",
+          "Crowdfunding platform taking a fee from funds raised",
+          "Marketplace collecting transaction fees"
+        ]
+      },
+      "receiver": {
+        "title": "Receiver",
+        "description": "The final recipient of funds after conditions are met or disputes are resolved.",
+        "examples": [
+          "Freelancer receiving payment",
+          "Tourist receiving a security deposit back",
+          "Company receiving crowdfunding funds"
+        ]
+      },
+      "cta": {
+        "title": "Learn More About Roles",
+        "description": "Discover how each role interacts within the escrow lifecycle and understand the complete workflow.",
+        "link": "Read Full Documentation"
+      }
+    },
+    "integration": {
+      "title": "Quick Integration Setup",
+      "subtitle": "Get started with Trustless Work API in minutes. Learn how to authenticate and make your first API call.",
+      "badge": "API Integration",
+      "auth": {
+        "title": "Authentication",
+        "description": "All API requests require authentication using your API key as a Bearer token.",
+        "baseUrl": "Base URL",
+        "mainnet": "Mainnet",
+        "testnet": "Testnet",
+        "header": "Authorization Header",
+        "reactLibrary": "React Library Installation"
+      },
+      "endpoint": {
+        "title": "Example Endpoint",
+        "description": "Here's an example of how to fund an escrow using our API.",
+        "params": "Required Parameters",
+        "payloads": "View all payload types"
+      },
+      "examples": {
+        "title": "Code Examples",
+        "description": "Choose between REST API or React Library to see implementation examples."
+      },
+      "cta": {
+        "title": "Ready to Integrate?",
+        "description": "Explore our complete API documentation with all available endpoints and examples.",
+        "link": "View Full Documentation"
+      }
+    },
+    "flow": {
+      "badge": "Transaction Flow",
+      "title": "Escrow Transaction Flow",
+      "subtitle": "Understand the complete process from payload preparation to transaction execution",
+      "diagram": {
+        "title": "Flow Diagram",
+        "description": "Visual representation of the 5-step escrow transaction process"
+      },
+      "step1": {
+        "title": "Prepare Payload",
+        "description": "Create the transaction payload with required parameters"
+      },
+      "step2": {
+        "title": "Execute Endpoint",
+        "description": "Send the payload to the Trustless Work API endpoint"
+      },
+      "step3": {
+        "title": "Get Unsigned TX",
+        "description": "Receive the unsigned transaction from the API"
+      },
+      "step4": {
+        "title": "Sign Transaction",
+        "description": "Sign the transaction using wallet or passkey"
+      },
+      "step5": {
+        "title": "Send Transaction",
+        "description": "Submit the signed transaction to the blockchain"
+      },
+      "summary": {
+        "title": "Transaction Flow Summary",
+        "description": "This 5-step process ensures secure and transparent escrow transactions"
+      },
+      "implementation": {
+        "title": "Implementation Methods",
+        "description": "Choose between REST API or React Library implementation"
+      },
+      "rest": {
+        "step1": "Manual Payload",
+        "step1Desc": "Manually construct the payload object with all required fields",
+        "step2": "HTTP Request",
+        "step2Desc": "Send POST request to the API endpoint with authentication",
+        "step3": "Parse Response",
+        "step3Desc": "Extract the unsigned transaction from the API response",
+        "step4": "Sign & Submit",
+        "step4Desc": "Sign the transaction and submit to the network"
+      },
+      "react": {
+        "step1": "Hook Usage",
+        "step1Desc": "Use the appropriate hook (e.g., useFundEscrow) with payload",
+        "step2": "Automatic Request",
+        "step2Desc": "The hook automatically handles the API request",
+        "step3": "Get Result",
+        "step3Desc": "Receive the unsigned transaction from the hook",
+        "step4": "Sign & Send",
+        "step4Desc": "Use useSendTransaction to sign and submit"
+      }
     }
   },
   "actions": {
     "fundEscrow": "Fund Escrow",
     "approveMilestone": "Approve Milestone",
     "startDispute": "Start Dispute",
-    "completeMilestone": "Complete Milestone",
+    "changeMilestoneStatus": "Change Milestone Status",
     "resolveDispute": "Resolve Dispute",
     "releasePayment": "Release payment",
     "editEscrow": "Edit Escrow"
   },
   "help": {
+    "actions": {
+      "fundEscrow": "Fund Escrow",
+      "approveMilestone": "Approve Milestone",
+      "startDispute": "Start Dispute",
+      "changeMilestoneStatus": "Change Milestone Status",
+      "resolveDispute": "Resolve Dispute",
+      "releasePayment": "Release Payment",
+      "editEscrow": "Edit Escrow"
+    },
     "videos": {
       "items": {
         "intro": {
@@ -287,6 +450,11 @@
     "disputed": "Disputed"
   },
   "myEscrows": {
+    "blockchainSync": {
+      "title": "Blockchain Synchronization Guaranteed",
+      "description": "The escrows shown here are perfectly synchronized between our database and the Stellar blockchain. Any data inconsistency would be detected immediately, so you can be completely confident that all information reflects exactly the current state on the blockchain.",
+      "close": "Got it!"
+    },
     "tabs": {
       "signer": "Initiated Escrows",
       "approver": "Approver",
@@ -417,7 +585,7 @@
     "editMilestonesTooltip": "Edit Milestones",
     "expand": "Expand",
     "collapse": "Collapse",
-    "completeMilestone": "Complete",
+    "changeMilestoneStatus": "Change Status",
     "showEvidence": "Show Evidence",
     "showDescription": "Show Description",
     "approveMilestone": "Approve",
@@ -585,6 +753,106 @@
       "actions": {
         "showMore": "Show More Metrics",
         "showLess": "Show Less Metrics"
+      }
+    }
+  },
+  "history": {
+    "title": "Escrow History",
+    "description": "View and manage your escrow transaction history across all roles and activities.",
+    "connectWallet": "Please connect your wallet to view history",
+    "error": "Error loading history",
+    "filters": {
+      "title": "Filters",
+      "searchPlaceholder": "Search escrows...",
+      "statusPlaceholder": "Select status",
+      "activityPlaceholder": "Select activity type",
+      "allStatuses": "All Statuses",
+      "active": "Active",
+      "released": "Released",
+      "resolved": "Resolved",
+      "disputed": "Disputed",
+      "allActivities": "All Activities",
+      "created": "Created",
+      "funded": "Funded",
+      "milestoneCompleted": "Milestone Completed",
+      "milestoneApproved": "Milestone Approved",
+      "clear": "Clear Filters"
+    },
+    "table": {
+      "title": "Escrow History",
+      "headers": {
+        "title": "Title",
+        "description": "Description",
+        "amount": "Amount",
+        "balance": "Balance",
+        "status": "Status",
+        "serviceProvider": "Service Provider",
+        "approver": "Approver",
+        "created": "Created",
+        "lastActivity": "Last Activity",
+        "actions": "Actions"
+      },
+      "dropdown": {
+        "label": "Actions",
+        "moreDetails": "More Details",
+        "viewViewer": "View in TW Escrow Viewer",
+        "openMenu": "Open menu"
+      },
+      "pagination": {
+        "itemsPerPage": "Items per page:",
+        "previous": "Previous",
+        "next": "Next",
+        "pageOf": "Page {{currentPage}} of {{totalPages}}"
+      },
+      "noTitle": "No title",
+      "noDescription": "No description"
+    },
+    "tabs": {
+      "approver": "Approver",
+      "serviceProvider": "Service Provider",
+      "issuer": "Issuer",
+      "disputeResolver": "Dispute Resolver",
+      "releaseSigner": "Release Signer",
+      "platformAddress": "Platform Address",
+      "receiver": "Receiver"
+    }
+  },
+  "apiKey": {
+    "title": "API Key for Authentication",
+    "subtitle": "Get access to the Trustless Work API to integrate escrow functionality into your application",
+    "badge": "API Integration",
+    "video": {
+      "title": "How to Request API Key in the dApp",
+      "description": "See how to request your API Key step by step in the dApp",
+      "placeholder": "Demo video"
+    },
+    "info": {
+      "title": "Important Information",
+      "testnet": "If you need to use the <strong>testnet</strong> API, you must request it at",
+      "mainnet": "If you need the <strong>mainnet</strong> API, you must request it at"
+    },
+    "buttons": {
+      "testnet": "API Testnet",
+      "mainnet": "API Mainnet"
+    },
+    "steps": {
+      "title": "How to Request Your API Key",
+      "subtitle": "Follow these simple steps to get your API key",
+      "connect": {
+        "title": "Connect Your Wallet",
+        "description": "Enter our dApp using your wallet or passkey (coming soon)"
+      },
+      "settings": {
+        "title": "Go to Settings",
+        "description": "Navigate to the Settings section in the sidebar"
+      },
+      "profile": {
+        "title": "Configure Your Profile",
+        "description": "Set up your profile - the use case field is mandatory for requesting your API key"
+      },
+      "request": {
+        "title": "Request API Key",
+        "description": "Go to the API Keys option in the sidebar and request your key"
       }
     }
   }

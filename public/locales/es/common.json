@@ -1,5 +1,6 @@
 {
   "sidebar": {
+    "history": "Historial",
     "platform": "Plataforma",
     "dashboard": "Panel de Control",
     "financials": "Finanzas",
@@ -143,6 +144,159 @@
       "title": "¿Listo para comenzar?",
       "subtitle": "Únete a nosotros en la construcción del futuro de la confianza en los pagos globales.",
       "button": "Explorar Nuestras Soluciones"
+    },
+    "roles": {
+      "title": "Roles en Trustless Work",
+      "subtitle": "Cada rol tiene una función distinta dentro del proceso de depósito en garantía, definiendo quién puede realizar acciones específicas y cómo las partes interactúan con el contrato inteligente.",
+      "badge": "Roles del Contrato Inteligente",
+      "examples": {
+        "title": "Ejemplos"
+      },
+      "approver": {
+        "title": "Aprobador",
+        "description": "Aprueba o disputa los hitos marcados como completados por el proveedor de servicio.",
+        "examples": [
+          "Comprador en un marketplace freelance aprueba entregables",
+          "Anfitrión en un escenario de depósito de seguridad aprueba el checkout",
+          "Plataforma en una campaña de crowdfunding aprueba hitos"
+        ]
+      },
+      "serviceProvider": {
+        "title": "Proveedor de Servicio",
+        "description": "Entrega el producto, servicio u objetivo establecido en los hitos y los marca como completados.",
+        "examples": [
+          "Freelancer entregando un servicio y marcándolo como completo",
+          "Empresa actualizando hitos de crowdfunding",
+          "Inspector de bienes raíces marcando inspecciones como completadas"
+        ]
+      },
+      "releaseSigner": {
+        "title": "Firmante de Liberación",
+        "description": "Aprueba la liberación de fondos por el monto establecido cuando todos los hitos están aprobados.",
+        "examples": [
+          "Airbnb (plataforma) liberando un depósito",
+          "eBay (plataforma) liberando pago a un vendedor",
+          "DAO liberando un pago a un contribuidor"
+        ]
+      },
+      "disputeResolver": {
+        "title": "Resolutor de Disputas",
+        "description": "Resuelve disputas ajustando montos de hitos, actualizando estado o cancelando el contrato.",
+        "examples": [
+          "Plataforma actuando como árbitro para disputas de depósitos",
+          "Árbitro independiente estableciendo nuevos precios de hitos",
+          "Cancelando un depósito y redirigiendo fondos al cliente"
+        ]
+      },
+      "platformAddress": {
+        "title": "Dirección de Plataforma",
+        "description": "Recibe la comisión de la plataforma y puede actualizar hitos mientras están pendientes.",
+        "examples": [
+          "Airbnb cobrando comisiones de plataforma",
+          "Plataforma de crowdfunding tomando una comisión de fondos recaudados",
+          "Marketplace cobrando comisiones de transacción"
+        ]
+      },
+      "receiver": {
+        "title": "Receptor",
+        "description": "El destinatario final de los fondos después de que se cumplan las condiciones o se resuelvan las disputas.",
+        "examples": [
+          "Freelancer recibiendo pago",
+          "Turista recibiendo de vuelta un depósito de seguridad",
+          "Empresa recibiendo fondos de crowdfunding"
+        ]
+      },
+      "cta": {
+        "title": "Aprende Más Sobre Roles",
+        "description": "Descubre cómo cada rol interactúa dentro del ciclo de vida del depósito y entiende el flujo de trabajo completo.",
+        "link": "Leer Documentación Completa"
+      }
+    },
+    "integration": {
+      "title": "Configuración Rápida de Integración",
+      "subtitle": "Comienza con la API de Trustless Work en minutos. Aprende cómo autenticarte y hacer tu primera llamada a la API.",
+      "badge": "Integración API",
+      "auth": {
+        "title": "Autenticación",
+        "description": "Todas las peticiones a la API requieren autenticación usando tu API key como token Bearer.",
+        "baseUrl": "URL Base",
+        "mainnet": "Mainnet",
+        "testnet": "Testnet",
+        "header": "Header de Autorización",
+        "reactLibrary": "Instalación de React Library"
+      },
+      "endpoint": {
+        "title": "Endpoint de Ejemplo",
+        "description": "Aquí tienes un ejemplo de cómo financiar un escrow usando nuestra API.",
+        "params": "Parámetros Requeridos",
+        "payloads": "Ver todos los tipos de payload"
+      },
+      "examples": {
+        "title": "Ejemplos de Código",
+        "description": "Elige entre API REST o React Library para ver ejemplos de implementación."
+      },
+      "cta": {
+        "title": "¿Listo para Integrar?",
+        "description": "Explora nuestra documentación completa de la API con todos los endpoints disponibles y ejemplos.",
+        "link": "Ver Documentación Completa"
+      }
+    },
+    "flow": {
+      "badge": "Flujo de Transacción",
+      "title": "Flujo de Transacción de Escrow",
+      "subtitle": "Comprende el proceso completo desde la preparación del payload hasta la ejecución de la transacción",
+      "diagram": {
+        "title": "Diagrama de Flujo",
+        "description": "Representación visual del proceso de transacción de escrow en 5 pasos"
+      },
+      "step1": {
+        "title": "Preparar Payload",
+        "description": "Crear el payload de la transacción con los parámetros requeridos"
+      },
+      "step2": {
+        "title": "Ejecutar Endpoint",
+        "description": "Enviar el payload al endpoint de la API de Trustless Work"
+      },
+      "step3": {
+        "title": "Obtener TX sin Firmar",
+        "description": "Recibir la transacción sin firmar desde la API"
+      },
+      "step4": {
+        "title": "Firmar Transacción",
+        "description": "Firmar la transacción usando wallet o passkey"
+      },
+      "step5": {
+        "title": "Enviar Transacción",
+        "description": "Enviar la transacción firmada a la blockchain"
+      },
+      "summary": {
+        "title": "Resumen del Flujo de Transacción",
+        "description": "Este proceso de 5 pasos asegura transacciones de escrow seguras y transparentes"
+      },
+      "implementation": {
+        "title": "Métodos de Implementación",
+        "description": "Elige entre implementación de API REST o React Library"
+      },
+      "rest": {
+        "step1": "Payload Manual",
+        "step1Desc": "Construir manualmente el objeto payload con todos los campos requeridos",
+        "step2": "Petición HTTP",
+        "step2Desc": "Enviar petición POST al endpoint de la API con autenticación",
+        "step3": "Analizar Respuesta",
+        "step3Desc": "Extraer la transacción sin firmar de la respuesta de la API",
+        "step4": "Firmar y Enviar",
+        "step4Desc": "Firmar la transacción y enviarla a la red"
+      },
+      "react": {
+        "step1": "Uso de Hook",
+        "step1Desc": "Usar el hook apropiado (ej., useFundEscrow) con el payload",
+        "step2": "Petición Automática",
+        "step2Desc": "El hook maneja automáticamente la petición a la API",
+        "step3": "Obtener Resultado",
+        "step3Desc": "Recibir la transacción sin firmar desde el hook",
+        "step4": "Firmar y Enviar",
+        "step4Desc": "Usar useSendTransaction para firmar y enviar"
+      }
     }
   },
   "help": {
@@ -243,7 +397,7 @@
       "fundEscrow": "Financiar Depósito",
       "approveMilestone": "Aprobar Hito",
       "startDispute": "Iniciar Disputa",
-      "completeMilestone": "Completar Hito",
+      "changeMilestoneStatus": "Cambiar Estado de Hito",
       "resolveDispute": "Resolver Disputa",
       "releasePayment": "Liberar Pago",
       "editEscrow": "Editar Depósito"
@@ -314,7 +468,7 @@
     "editMilestonesTooltip": "Editar Hitos",
     "expand": "Expandir",
     "collapse": "Colapsar",
-    "completeMilestone": "Completar",
+    "changeMilestoneStatus": "Cambiar Estado",
     "showEvidence": "Mostrar Evidencia",
     "showDescription": "Mostrar Descripción",
     "approveMilestone": "Aprobar",
@@ -355,6 +509,11 @@
     }
   },
   "myEscrows": {
+    "blockchainSync": {
+      "title": "Sincronización Blockchain Garantizada",
+      "description": "Los escrows mostrados están perfectamente sincronizados entre nuestra base de datos y la blockchain de Stellar. Cualquier inconsistencia de datos sería detectada inmediatamente, por lo que puedes estar completamente tranquilo de que toda la información refleja exactamente el estado actual en la blockchain.",
+      "close": "¡Entendido!"
+    },
     "tabs": {
       "signer": "Escrows Iniciados",
       "approver": "Aprobador",
@@ -384,7 +543,7 @@
         "label": "Fecha de Creación"
       },
       "actions": {
-        "create": "Crear Depósito"
+        "create": "Crear Escrow"
       },
       "amount": {
         "label": "Rango de Monto",
@@ -585,6 +744,106 @@
       "actions": {
         "showMore": "Mostrar Más Métricas",
         "showLess": "Mostrar Menos Métricas"
+      }
+    }
+  },
+  "history": {
+    "title": "Historial de Escrows",
+    "description": "Ver y gestionar el historial de transacciones de escrows en todos los roles y actividades.",
+    "connectWallet": "Por favor conecta tu wallet para ver el historial",
+    "error": "Error al cargar el historial",
+    "filters": {
+      "title": "Filtros",
+      "searchPlaceholder": "Buscar escrows...",
+      "statusPlaceholder": "Seleccionar estado",
+      "activityPlaceholder": "Seleccionar tipo de actividad",
+      "allStatuses": "Todos los Estados",
+      "active": "Activo",
+      "released": "Liberado",
+      "resolved": "Resuelto",
+      "disputed": "En Disputa",
+      "allActivities": "Todas las Actividades",
+      "created": "Creado",
+      "funded": "Financiado",
+      "milestoneCompleted": "Hito Completado",
+      "milestoneApproved": "Hito Aprobado",
+      "clear": "Limpiar Filtros"
+    },
+    "table": {
+      "title": "Historial de Escrows",
+      "headers": {
+        "title": "Título",
+        "description": "Descripción",
+        "amount": "Monto",
+        "balance": "Balance",
+        "status": "Estado",
+        "serviceProvider": "Proveedor de Servicio",
+        "approver": "Aprobador",
+        "created": "Creado",
+        "lastActivity": "Última Actividad",
+        "actions": "Acciones"
+      },
+      "dropdown": {
+        "label": "Acciones",
+        "moreDetails": "Más Detalles",
+        "viewViewer": "Ver en Visor de TW",
+        "openMenu": "Abrir menú"
+      },
+      "pagination": {
+        "itemsPerPage": "Elementos por página:",
+        "previous": "Anterior",
+        "next": "Siguiente",
+        "pageOf": "Página {{currentPage}} de {{totalPages}}"
+      },
+      "noTitle": "Sin título",
+      "noDescription": "Sin descripción"
+    },
+    "tabs": {
+      "approver": "Aprobador",
+      "serviceProvider": "Proveedor de Servicio",
+      "issuer": "Emisor",
+      "disputeResolver": "Resolutor de Disputas",
+      "releaseSigner": "Firmante de Liberación",
+      "platformAddress": "Dirección de Plataforma",
+      "receiver": "Receptor"
+    }
+  },
+  "apiKey": {
+    "title": "API Key para Autenticación",
+    "subtitle": "Obtén acceso a la API de Trustless Work para integrar funcionalidades de escrow en tu aplicación",
+    "badge": "Integración API",
+    "video": {
+      "title": "Como solicitar el API Key en el dapp",
+      "description": "Ve cómo solicitar tu API Key paso a paso en el dapp",
+      "placeholder": "Video de demostración"
+    },
+    "info": {
+      "title": "Información Importante",
+      "testnet": "Si necesita utilizar la API de <strong>testnet</strong>, debe solicitarla en",
+      "mainnet": "Si necesita la API de <strong>mainnet</strong>, debe solicitarla en"
+    },
+    "buttons": {
+      "testnet": "API Testnet",
+      "mainnet": "API Mainnet"
+    },
+    "steps": {
+      "title": "Cómo Solicitar tu API Key",
+      "subtitle": "Sigue estos simples pasos para obtener tu API key",
+      "connect": {
+        "title": "Conecta tu Wallet",
+        "description": "Ingresa a nuestro dApp usando tu wallet o passkey (próximamente)"
+      },
+      "settings": {
+        "title": "Ve a Configuración",
+        "description": "Navega a la sección de Configuración en la barra lateral"
+      },
+      "profile": {
+        "title": "Configura tu Perfil",
+        "description": "Configura tu perfil - el campo de caso de uso es obligatorio para solicitar tu API key"
+      },
+      "request": {
+        "title": "Solicita tu API Key",
+        "description": "Ve a la opción de API Keys en la barra lateral y solicita tu key"
       }
     }
   }
